@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Basic Calculator</h1>
+    <div class="calculator">
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('x')">*</button>
+            <button onclick="calculate('/')">/</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="calculator2.js"></script>
+</body>
+<style>
+
+    h1 {
+        color: white;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 25px;
+    background-color: #050404;
+}
+
+.calculator {
+    display: inline-block;
+    text-align: left;
+}
+
+.calculator input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 22px);
+}
+
+.buttons {
+    text-align: center;
+    background-color: black;
+}
+
+.buttons button {
+    margin: 7px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(191, 191, 190);
+}
+
+button:active {
+    background-color: orange;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+</style>
+</html>
